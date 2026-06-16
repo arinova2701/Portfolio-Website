@@ -31,13 +31,13 @@
 /* ===== BASE ===== */
 html {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
   font-family: 'Geist Mono', monospace;
   background: #000;
   color: #fff;
@@ -82,6 +82,7 @@ a {
   z-index: 1;
   padding: 0 48px 18px;
 } */
+
 
 /* ===== LILIES ===== */
 .lily {
@@ -214,7 +215,7 @@ header {
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 120px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
@@ -272,16 +273,17 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  justify-content: space-between;
+  min-height: 100vh;
+  height: auto;
+  justify-content: flex-start;
   position: relative;
   z-index: 1;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero {
-  flex: 1;
+  flex: 0 1 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,7 +293,7 @@ header {
   min-height: 0;
   margin: 0;
   padding: 30px;
-  margin-top: -120px;
+  margin-top: -110px;
 }
 
 .hero-visual {
@@ -438,7 +440,7 @@ header {
   z-index: 2;
   letter-spacing: 2px;
   margin-top: 5px;
-  margin-bottom:130px;
+  margin-bottom:20px;
   text-align: center;
 }
 
@@ -465,15 +467,17 @@ header {
 
 /* ===== FOOTER ===== */
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  max-width: 100%;
-  flex-shrink: 0;
-  margin-top: auto;
   padding: 10px 24px 0;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid rgba(199, 0, 0, 0.374);
+  z-index: 100;
 }
 
 .divider {
