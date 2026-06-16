@@ -180,11 +180,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const roles = [
     'ML ENGINEER',
     'AI & AUTOMATION',
-    'MACHINE LEARNING',
-    'BACKEND',
-    'CONTENT CREATION',
-    'VIDEOGRAPHY',
-    'MANAGEMENT'
+    'BACKEND DEVELOPER',
+    'DESIGNER',
+    'COMMUNITY LEAD',
+    'CONTENT CREATOR',
+    'VIDEOGRAPHER',
+    'PROBLEM SOLVER',
+    'SYSTEM THINKER',
+    'BUILDER',
+    'INNOVATOR',
+    'RESEARCHER',
+    'STORYTELLER',
+    'YAPPER'
   ];
   new RotatingText(roleEl, roles, 2800);
 
