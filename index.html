@@ -14,6 +14,11 @@
     <source src="Noise Video 200560.mp4" type="video/mp4">
   </video>
 
+  <!-- Matrix background video -->
+  <video class="matrix-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="Matrix-video.mp4" type="video/mp4">
+  </video>
+
   <!-- Lily decorations -->
   <img src="HD top rleft lily.png" alt="" class="lily lily-top-left" aria-hidden="true">
   <img src="HD bottom right lily.png" alt="" class="lily lily-bottom-right" aria-hidden="true">
@@ -25,9 +30,9 @@
 <header class="fade-in fade-in-delay-1">
   <a href="#" class="connect-btn" id="connect-btn">CONNECT</a>
   <nav class="social-nav" id="social-nav">
-    <a href="#" class="nav-link" id="link-gh" data-tooltip="GitHub">[GH]</a>
-    <a href="#" class="nav-link" id="link-in" data-tooltip="LinkedIn">[IN]</a>
-    <a href="#" class="nav-link" id="link-mail" data-tooltip="Send a message">[MAIL]</a>
+    <a href="https://github.com/arinova2701" class="nav-link" id="link-gh" data-tooltip="GitHub" target="_blank" rel="noopener noreferrer">[GH]</a>
+<a href="https://www.linkedin.com/in/maneesh-ari" class="nav-link" id="link-in" data-tooltip="LinkedIn" target="_blank" rel="noopener noreferrer">[IN]</a>
+<a href="#" class="nav-link" id="link-mail" data-tooltip="Send a message">[MAIL]</a>
   </nav>
 </header>
 
@@ -95,6 +100,8 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+ <script src="https://unpkg.com/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
 </body>
+<div class="cursor-dot" id="cursor-dot"></div>
 </html>
